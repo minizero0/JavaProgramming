@@ -13,7 +13,6 @@ public class ListEx {
 		score.add("김승래");
 		score.add("최호준");
 		
-		for(score)
 			if(score.get(rand).equals("조영민"))
 				System.out.println(score.get(rand)+ " 임포스터");
 				else
