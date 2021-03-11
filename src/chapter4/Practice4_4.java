@@ -23,6 +23,7 @@ public class Practice4_4 {
 		Book what = new Book();
 		System.out.println(what.author + "의 " + what.title);
 		
+		
 	}
 
-}
+}                                                                                                        
