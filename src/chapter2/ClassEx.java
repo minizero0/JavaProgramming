@@ -11,7 +11,7 @@ public class ClassEx {
 		System.out.println(person2);
 		Hero hero = new Hero("슈퍼맨");
 		Hero hero2 = new Hero("배트맨");
-		hero.attack(hero);
+		hero.attack(hero2);
 	}
 
 	
