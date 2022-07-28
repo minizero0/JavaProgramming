@@ -12,8 +12,13 @@ class Book{
 		author =a;
 		title = t;
 	}
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
 	
 }
+
 public class Practice4_4 {
 
 	public static void main(String[] args) {
@@ -22,8 +27,9 @@ public class Practice4_4 {
 		System.out.println(hell.author + "의 "+hell.title);
 		Book what = new Book();
 		System.out.println(what.author + "의 " + what.title);
-		
-		
+		System.out.println(what.add(1,2));
 	}
+	
+
 
 }                                                                                                        
