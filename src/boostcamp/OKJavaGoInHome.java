@@ -1,9 +1,14 @@
 package boostcamp;
+import org.opentutorials.iot.Elevator;
 
 public class OKJavaGoInHome {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		//Elevator call
+		//security off
+		//Light on
+		
 
 	}
 
