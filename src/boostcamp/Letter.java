@@ -4,7 +4,7 @@ public class Letter {
 
 	public static void main(String[] args) {
 		String name = "leezche";
-		String myNmae = "yeongmin";
+		String myName = "yeongmin";
 		System.out.println("hello " + name + "..." + myName);
 
 	}
