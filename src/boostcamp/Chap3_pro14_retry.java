@@ -8,6 +8,13 @@ public class Chap3_pro14_retry {
 		
 		String course [] = {"Java", "C++", "HTMLS", "컴퓨터구조", "안드로이드"};
 		int score [] = {95, 88, 76, 62, 55};
+		
+		
+		while (true) {
+			
+			String name = sc.next();
+			
+		}
 
 	}
 
