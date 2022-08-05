@@ -10,7 +10,8 @@ public class Chap3_pro14_retry {
 		int score [] = {95, 88, 76, 62, 55};
 		int count = 0;
 		
-		while (true) {
+	
+		while(true) {
 			System.out.print("과목을 입력하세요>>");
 			String name = sc.next();
 			if (name.equals("그만"))
@@ -21,11 +22,11 @@ public class Chap3_pro14_retry {
 					count++;
 				}
 			}
-			if (count == 0)
+			if (count == 0 )
 				System.out.println("없는 과목입니다.");
 			
 		}
-
+	
 	}
 
 }
