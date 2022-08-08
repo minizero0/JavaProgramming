@@ -21,7 +21,6 @@ public class Back2562 {
 		
 		System.out.println(max);
 		System.out.println(count + 1);
-
 	}
 
 }
