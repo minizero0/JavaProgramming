@@ -15,10 +15,9 @@ public class Back1546 {
 			arr[i] = sc.nextInt();
 			if (arr[i] > max)
 				max = arr[i];
-		}
+			}
 		for (int i = 0; i < arr.length; i++) 
 			sum += (arr[i]/(double)max) * 100;
 		System.out.println(sum/number);
 	}
-
 }

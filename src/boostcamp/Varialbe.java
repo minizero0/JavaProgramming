@@ -3,16 +3,10 @@ package boostcamp;
 public class Varialbe {
 
 	public static void main(String[] args) {
-		int a, b;
-		a = 100;
-		b = 250;
-		double c = 250.12;
-		String d = "Hello World";
+		int a = 83;
+		int b = 50;
 		
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-		System.out.println(d);
+		System.out.println("두 시험 점수 합" + (a + b));
 	}
 
 }
