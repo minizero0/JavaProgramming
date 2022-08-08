@@ -11,7 +11,7 @@ public class Back2577 {
 		int c = sc.nextInt();
 		
 		int sum = a*b*c;
-		System.out.println(sum);
+		
 		int arr[] = new int[10];
 		while (sum > 0) {
 			arr[sum%10]++;
