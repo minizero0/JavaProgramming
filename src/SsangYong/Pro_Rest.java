@@ -1,11 +1,13 @@
 package SsangYong;
-import java.util.Scanner;
+import java.util.*;
 
 public class Pro_Rest {
 
 	public static void main(String[] args) {
+		Date year = new Date();
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println(thisYear);
 		System.out.println("정수를 입력하세요");
 		int n = sc.nextInt();
 		
