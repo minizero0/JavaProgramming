@@ -7,6 +7,7 @@ public class Pro_Rest {
 		Date year = new Date();
 		Scanner sc = new Scanner(System.in);
 		
+		int thisYear = year.getYear() + 1900;
 		System.out.println(thisYear);
 		System.out.println("정수를 입력하세요");
 		int n = sc.nextInt();

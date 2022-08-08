@@ -18,5 +18,4 @@ public class Pdf7 {
 		sum = 컴퓨터개론 + C언어 + 영어 + 일반수학;
 		System.out.println("평균 점수는 " + sum/4f + "점입니다.");
 	}
-
 }
