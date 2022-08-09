@@ -17,9 +17,9 @@ public class GetAvg {
 		avg = sum / (double)3;
 		System.out.printf("이름: %-10s, 총점: %-10d, 평균 : %.2f\n", name, sum, avg );
 		if (avg >= 60)
-			System.out.printf(name + "평균 : %.3f" + "합격",avg);
+			System.out.printf(name + "평균 : %.3f 합격",avg);
 		else
-			System.out.println(name + "평균 : " + avg + "불합격");
+			System.out.printf(name + "평균 : %.3f 불합격",avg);
 
 	}
 
