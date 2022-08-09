@@ -6,12 +6,13 @@ public class Back11720 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int number = sc.nextInt();
-		char result[] = new char[number];
+		String result = sc.next();
+		sc.close();
+		int sum = 0;
 		for (int i = 0; i < number; i++) {
-			result[i] = sc.next().charAt(0);
+			sum += result.charAt(i) - '0';
 		}
-		
-		System.out.printf("%c", result[0]);
+		System.out.println(sum);
 	}
 
 }
