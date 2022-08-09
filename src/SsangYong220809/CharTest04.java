@@ -16,6 +16,5 @@ public class CharTest04 {
 				isFlag = false;
 		}
 		System.out.println("e의 개수는" + count + "개 입니다.");
-	}
-
+	} 
 }
