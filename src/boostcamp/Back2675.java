@@ -10,9 +10,11 @@ public class Back2675 {
 		for (int i = 0; i < test; i ++) {
 			int tc = sc.nextInt();
 			String s = sc.next();
-			for (int j = 0; j < tc; j++) {
-				s.charAt(j)
+			for (int j = 0; j < s.length(); j++) {
+				for (int k = 0; k < tc; k++)
+					System.out.print(s.charAt(j));
 			}
+			System.out.println();
 		}
 
 	}
