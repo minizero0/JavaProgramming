@@ -6,7 +6,7 @@ public class Practice04 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int a,b,c;
+		int a,b,c,max;
 		System.out.println("정수 a를 입력하세요");
 		a = sc.nextInt();
 		System.out.println("정수 b를 입력하세요");
@@ -16,16 +16,17 @@ public class Practice04 {
 		
 		if (a > b) {
 			if (a > c)
-				System.out.println("가장 큰 수는 " + a);
+				max = a;
 			else
-				System.out.println("가장 큰 수는 " + c);
+				max = c;
 		}
 		else {
 			if (b > c)
-				System.out.println("가장 큰 수는 " + b);
+				max = b;
 			else
-				System.out.println("가장 큰 수는 " + c);
+				max = c;
 		}
+		System.out.println("가장 큰 수는 " + max);
 				
 	}
 
