@@ -29,10 +29,12 @@ public class Back1316 {
 					check[now - 'a'] = true;
 					perv = now;
 				}
+				else
+					return false;
 			}
+			else
+				continue;
 		}
-		
-		
-		
+		return true;	
 	}
 }
