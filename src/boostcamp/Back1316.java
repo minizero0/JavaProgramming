@@ -13,8 +13,6 @@ public class Back1316 {
 				count++;
 		}
 		System.out.println(count);
-		
-
 	}
 	public static boolean check() {
 		boolean check[] = new boolean[26];
