@@ -1,5 +1,4 @@
 package SsangYong220811;
-
 import java.util.Scanner;
 
 public class TeamExam01 {
@@ -7,6 +6,7 @@ public class TeamExam01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n, sum1=0, sum2=0, cnt1 = 0, cnt2 = 0;
+		
 		System.out.println("n을 입력하세요.");
 		n = sc.nextInt();
 		
@@ -14,7 +14,7 @@ public class TeamExam01 {
 			if (i % 2 == 0) {
 				sum1 += i;
 				cnt1++;
-			}
+			}	
 			else {
 				sum2 += i;
 				cnt2++;
