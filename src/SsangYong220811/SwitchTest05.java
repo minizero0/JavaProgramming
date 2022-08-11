@@ -1,5 +1,4 @@
 package SsangYong220811;
-
 import java.util.Scanner;
 
 public class SwitchTest05 {
@@ -22,9 +21,7 @@ public class SwitchTest05 {
 				month = sc.nextInt();
 				if (month >= 1 && month <= 12) 
 					isFlag = false;
-			}
-			
-			
+			}//end 월 입력.	
 			
 			int last = 31;
 			switch(month) {
@@ -38,7 +35,7 @@ public class SwitchTest05 {
 				day = sc.nextInt();
 				if (day >= 1 && day <= last) 
 					isFlag = false;
-			}
+			}//end 일 입력.
 			
 			
 			switch (month) {
@@ -55,21 +52,14 @@ public class SwitchTest05 {
 			case 11:if (day <= 22) star = "천칭자리";else star = "사수자리";break;
 			case 12:if (day <= 24) star = "사수자리";else star = "염소자리";break;
 			default:return;
-			}
-	//		if ((month == 1 && (day >= 20 && day <= 31)) || month == 2 && (day >=1 && day <=18))
-	//			star = "물병자리";
-	//		else if((month == 2 && (day >=19 && day <=31)) || month == 3 &&(day >= 1 && day <= 20))
-	//			star = "물고기자리";
-	//		else if ((month == 3 && (day >=21 && day <= 30)) && month == 4 && (day >= 1 && day <= 19))
-	//			star = "양자리";
-	//		else
-	//			return;
+			}//end switch
+
 			System.out.println(name + "님의 별자리는 " + star + "입니다.");
 			System.out.println("계속하시겠습니까? (y/n)");
 			answer = sc.next().charAt(0);
 			if (answer == 'n')
 				break;
-		}
+		}//end while
 		System.out.println("별자리 찾기 프로그램 종료");
-	}
+	}//end main
 }
