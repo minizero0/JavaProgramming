@@ -33,7 +33,7 @@ class	Star
 					{
 						star = "물병자리";		
 					}
-					else(day>=19 && day<=28)
+					else
 					{
 						star = "물고기자리";
 					}
@@ -43,7 +43,7 @@ class	Star
 					{
 						star = "물고기자리";		
 					}
-					else(day>=21 && day<=31)
+					else
 					{
 						star = "양자리";
 					}

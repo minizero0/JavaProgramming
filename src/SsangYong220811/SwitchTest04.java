@@ -2,24 +2,26 @@ package SsangYong220811;
 
 import java.util.Scanner;
 
-public class StarArea02 {
+public class SwitchTest04 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String name;
-		String star;
-		int month, day;
-		
+		String name, star;
+		int month = 0, day = 0;
+		boolean isFlag = true;
 		System.out.println("이름을 입력하세요.");
 		name = sc.next();
-		System.out.println("몇월에 태어났나요.");
-		month = sc.nextInt();
 		
-		if (month < 1 || month > 12) {
-			System.out.println("입력오류.");
-			return;
+		
+		while (isFlag) {
+			System.out.println("몇월에 태어났나요.");
+			month = sc.nextInt();
+			if (month >= 1 && month <= 12) 
+				isFlag = false;
 		}
+		
+		
 		
 		int last = 31;
 		switch(month) {
@@ -27,13 +29,14 @@ public class StarArea02 {
 			case 2:last = 28;
 		}
 		
-		System.out.println("몇일에 태어났나요.");
-		day = sc.nextInt();
-		
-		if (day < 1 || day > last) {
-			System.out.println("입력된 날짜가 범위를 넘었습니다.");
-			return;
+		isFlag = true;
+		while (isFlag) {
+			System.out.println("몇일에 태어났나요.");
+			day = sc.nextInt();
+			if (day >= 1 && day <= last) 
+				isFlag = false;
 		}
+		
 		
 		switch (month) {
 		case 1:if (day <= 19) star = "염소자리";else star = "물병자리";break;
