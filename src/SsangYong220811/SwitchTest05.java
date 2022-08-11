@@ -41,7 +41,7 @@ public class SwitchTest05 {
 			switch (month) {
 			case 1:if (day <= 19) star = "염소자리";else star = "물병자리";break;
 			case 2:if (day <= 18) star = "물병자리";else star = "물고기자리";break;	
-			case 3: if (day <= 20) star = "물고기자리";else star = "양자리";break;	
+			case 3:if (day <= 20) star = "물고기자리";else star = "양자리";break;	
 			case 4:if (day <= 19) star = "양자리";else star = "황소자리";break;
 			case 5:if (day <= 20) star = "황소자리";else star = "쌍둥이자리";break;
 			case 6:if (day <= 21) star = "쌍둥이자리";else star = "게자리";break;
@@ -55,10 +55,18 @@ public class SwitchTest05 {
 			}//end switch
 
 			System.out.println(name + "님의 별자리는 " + star + "입니다.");
-			System.out.println("계속하시겠습니까? (y/n)");
-			answer = sc.next().charAt(0);
-			if (answer == 'n')
+			while (true) {
+				System.out.println("계속하시겠습니까? (y/n)");
+				answer = sc.next().charAt(0);
+				
+				if (answer == 'n') //참조자료형은 변수.equals("content");
+					break;
+				else if (answer == 'y')
+					break;
+			}
+			if (answer == 'n') //참조자료형은 변수.equals("content");
 				break;
+			
 		}//end while
 		System.out.println("별자리 찾기 프로그램 종료");
 	}//end main
