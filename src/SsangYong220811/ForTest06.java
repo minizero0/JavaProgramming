@@ -1,5 +1,4 @@
 package SsangYong220811;
-
 import java.util.Scanner;
 
 public class ForTest06 {
@@ -19,7 +18,5 @@ public class ForTest06 {
 			}
 		}
 		System.out.println("합은 " + sum + "이고 3의 배수의 개수는 " + count + "입니다.");
-
 	}
-
 }
