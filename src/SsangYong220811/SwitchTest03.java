@@ -7,13 +7,13 @@ public class SwitchTest03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int month;
-		int day;
+		int month, day;
+		
 		System.out.println("몇월인지 입력하세요.");
 		month = sc.nextInt();
 		
 		if (month < 1 || month > 12) {
-			System.out.println("잘못된 입력.");
+			System.out.println("입력오류.");
 			return;
 		}
 		
@@ -26,10 +26,8 @@ public class SwitchTest03 {
 			break;
 		default :
 			day = 31;
-			
 		}
+		
 		System.out.println(month + "월은 " + day + "일까지입니다.");
-
 	}
-
 }
