@@ -20,7 +20,7 @@ public class Back1316_Retry {
 		for (int i = 0; i < s.length(); i++) {
 			int now = s.charAt(i);
 			
-			if (perv != now - 'a') { 
+			if (perv != now) { 
 				if (check[now - 'a'] == false) {
 					check[now - 'a'] = true;
 					perv = now;
@@ -28,6 +28,8 @@ public class Back1316_Retry {
 				else
 					return false;			
 				}
+			else
+				continue;
 		}
 		return true;
 	}
