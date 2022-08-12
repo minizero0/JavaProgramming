@@ -1,5 +1,4 @@
 package SsangYong220812;
-
 import java.util.Scanner;
 
 public class StarTestWhile01 {
