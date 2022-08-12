@@ -1,5 +1,4 @@
 package SsangYong220812;
-
 import java.util.Scanner;
 
 public class NestedForTest02 {
@@ -9,7 +8,7 @@ public class NestedForTest02 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("별을 몇줄 출력할까요?");
 		a = sc.nextInt();
-		System.out.println("별을 몇줄 출력할까요?");
+		System.out.println("별을 몇칸 출력할까요?");
 		b = sc.nextInt();
 		
 		for (int i = 0; i < a; i++) {
@@ -17,7 +16,5 @@ public class NestedForTest02 {
 				System.out.print("*");
 			System.out.println();
 		}
-
 	}
-
 }
