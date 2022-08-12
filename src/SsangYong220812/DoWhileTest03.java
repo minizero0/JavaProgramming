@@ -13,7 +13,5 @@ public class DoWhileTest03 {
 			i++;
 		}while(i <= N);
 			System.out.println(sum);
-
 	}
-
 }
