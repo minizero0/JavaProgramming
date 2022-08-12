@@ -16,8 +16,6 @@ public class Programmin04 {
 			c = a + b;
 			a = b;
 			b = c;
-			
-			
 		}
 
 	}
