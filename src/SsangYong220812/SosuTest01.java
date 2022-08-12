@@ -2,7 +2,7 @@ package SsangYong220812;
 
 import java.util.Scanner;
 
-public class NestedForTest05 {
+public class SosuTest01 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
