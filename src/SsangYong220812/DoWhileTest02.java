@@ -16,7 +16,5 @@ public class DoWhileTest02 {
 			i++;
 		}while(i < 10);
 		System.out.println("종료");
-
 	}
-
 }
