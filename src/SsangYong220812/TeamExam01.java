@@ -8,6 +8,7 @@ public class TeamExam01 {
 			for (int j = 0; j <= 5; j++)
 			sum += (i*j);
 		}
+	
 		
 		System.out.printf("%d", sum);
 	}
