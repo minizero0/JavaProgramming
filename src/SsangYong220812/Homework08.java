@@ -27,7 +27,5 @@ public class Homework08 {
 		System.out.println("월별평균사용금액 : " + sum/12);
 		System.out.println("가장 지출이 많았던 월." + (max+1));
 		System.out.println("가장 지출이 적었던 월." + (min+1));
-
 	}
-
 }
