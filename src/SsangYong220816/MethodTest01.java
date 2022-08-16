@@ -2,15 +2,14 @@ package SsangYong220816;
 
 public class MethodTest01 {
 	
-	private static String hello() { //method 정의
+	private static void hello() { //method 정의
 		System.out.println("Hi");
 		System.out.println("Hi");
 		System.out.println("Hi");
-		return "hello";
 	}
 
 	public static void main(String[] args) {
-		System.out.println(hello());
+		hello();
 		
 		String title = "SsangYongEducationCenter";
 		System.out.println(title);
