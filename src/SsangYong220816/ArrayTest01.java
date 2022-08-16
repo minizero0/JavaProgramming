@@ -1,5 +1,4 @@
 package SsangYong220816;
-
 import java.util.Scanner;
 
 public class ArrayTest01 {
