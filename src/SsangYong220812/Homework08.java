@@ -1,5 +1,4 @@
 package SsangYong220812;
-
 import java.util.Scanner;
 
 public class Homework08 {
@@ -21,7 +20,7 @@ public class Homework08 {
 		int min = 0;
 		for (int i = 0; i < pay.length; i++) {
 			System.out.println((i+1) + "월 카드 사용금액:");
-			System.out.println(pay[i]);
+			System.out.println((int)pay[i]);
 			if (pay[i] > max)
 				max = i;
 			if (pay[i] < min)
@@ -29,7 +28,7 @@ public class Homework08 {
 	}
 		System.out.println("1년 전체 사용금액 : " + sum);
 		System.out.println("월별평균사용금액 : " + sum/12);
-		System.out.println("가장 지출이 많았던 월." + (max+1));
-		System.out.println("가장 지출이 적었던 월." + (min+1));
+		System.out.println("가장 지출이 많았던 월 : " + (max+1) + "월");
+		System.out.println("가장 지출이 적었던 월 : " + (min+1) + "월");
 	}
 }
