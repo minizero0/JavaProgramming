@@ -10,7 +10,5 @@ public class MethodTest04 {
 	public static void main(String[] args) {
 		Plus(1,2);
 		Plus(100,200);
-
 	}
-
 }
