@@ -15,7 +15,7 @@ public class MethodTest06 {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		sum(n);
-
+		sum(5);
+		sum(10);
 	}
-
 }
