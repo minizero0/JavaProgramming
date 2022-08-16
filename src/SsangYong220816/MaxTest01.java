@@ -12,7 +12,5 @@ public class MaxTest01 {
 				max = a[i];
 		}
 		System.out.println(max);
-
 	}
-
 }

@@ -12,11 +12,10 @@ public class Homework08 {
 		int max = 0,min = 1000000;
 		
 		for (int i = 0; i < pay.length ; i++) {
-			pay[i] = sc.nextDouble();
-			if (pay[i] < 0) {
-				System.out.println("잘못된 입력입니다.");
-				return;
-			}
+			do {
+				System.out.println((i+1) + "월의 카드 사용금액을 입력==>");
+				pay[i] = sc.nextDouble();
+			}while(pay[i] < 0);
 			sum += pay[i];
 			if (pay[i] > max)
 				max = i;
