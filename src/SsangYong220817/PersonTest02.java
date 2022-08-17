@@ -3,16 +3,16 @@ package SsangYong220817;
 class Person{  //클래스 정의 
 	private String name;
 	private int age;
-	public void setName(String n) {
+	public void setName(String n) {  //Setter 설정자
 		name = n;
 	}
-	public void setAge(int n) {
+	public void setAge(int n) {  //Setter 설정자
 		age = n;
 	}
-	public String getName() {
+	public String getName() {  //Getter 접근자
 		return name;
 	}
-	public int getAge() {
+	public int getAge() {   //Getter 접근자
 		return age;
 	}
 	public void eat(String food) {
