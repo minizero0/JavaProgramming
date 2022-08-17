@@ -1,9 +1,10 @@
 package SsangYong220817;
 import java.util.Scanner;
 
-public class RuntimeErrorTest {
+public class RuntimeErrorTest02 {
 
 	public static void main(String[] args) {
+		try {
 		Scanner sc = new Scanner(System.in);
 		int a,b;
 		System.out.println("첫번째 수 입력==>");
@@ -18,7 +19,9 @@ public class RuntimeErrorTest {
 		
 		int div = a/b;
 		System.out.println("나누기 결과 :" + div);
-
+		}catch(Exception e) {
+			System.out.println("0으로 나누면 안됨.");
+		}
 	}
 
 }
