@@ -4,11 +4,11 @@ class Book{
 	private String title;
 	private String author;
 	
-	public void setTitle(String s) {
-		title = s;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public void setAuthor(String s) {
-		author = s;
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 	public String getTitle() {
 		return title;
@@ -24,9 +24,6 @@ public class BookTest {
 		Book prince = new Book();
 		prince.setTitle("Young Prince");
 		prince.setAuthor("unKnown");
-		
 		System.out.println("제목 :" + prince.getTitle()+ "\n작가 :" + prince.getAuthor());
-
 	}
-
 }
