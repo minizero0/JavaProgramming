@@ -1,8 +1,8 @@
 package SsangYong220817;
 
-class BankAccount{        //은행계좌.
-	private double balance;  //잔액표시 멤버 변수. 
-	int x; //멤버 변수는 자동으로 0으로 초기화됨. boolean : false, String : null, int : 0, double 0.0
+class BankAccount{        		//은행계좌.
+	private double balance;  	//잔액표시 멤버 변수. 
+	int x; 						//멤버 변수는 자동으로 0으로 초기화됨. boolean : false, String : null, int : 0, double 0.0
 	
 	public void deposit(double amount) {  //저금 
 		balance += amount;
@@ -13,7 +13,7 @@ class BankAccount{        //은행계좌.
 		else
 		balance -= amount;
 	}
-	public double getBalance() {
+	public double	 getBalance() {
 		return balance;
 	}
 	public void printBalance() {
