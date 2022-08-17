@@ -1,25 +1,25 @@
 package SsangYong220817;
 
 class Triangle{
-	private int width;
-	private int height;
-	private int area;
-	public int getWidth() {
+	private double width;
+	private double height;
+	private double area;
+	
+	public double getWidth() {
 		return width;
 	}
-	public void setWidth(int width) {
+	public void setWidth(double width) {
 		this.width = width;
 	}
-	public int getHeight() {
+	public double getHeight() {
 		return height;
 	}
-	public void setHeight(int height) {
+	public void setHeight(double height) {
 		this.height = height;
 	}
-	public int getArea() {
-		return width * height;
+	public double getArea() {
+		return width * height/2;
 	}
-	
 }
 
 public class TriangleTest {
@@ -30,7 +30,8 @@ public class TriangleTest {
 		myTr.setHeight(5);
 		
 		System.out.println(myTr.getArea());
-
+		myTr.setHeight(20);
+		System.out.println("수정 후 면적 :" + myTr.getArea());
+		
 	}
-
 }
