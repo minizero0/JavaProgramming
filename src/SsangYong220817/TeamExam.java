@@ -16,6 +16,7 @@ class Dog {
 	}
 	public Dog () {
 	}
+	
 	public void printDog () {
 		System.out.println("이름 : " + name + "\n종 : " + breed + "\n나이 : " + age);
 	}
