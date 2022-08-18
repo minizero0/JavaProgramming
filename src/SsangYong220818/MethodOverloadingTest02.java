@@ -30,10 +30,8 @@ class MyUtil1{
 public class MethodOverloadingTest02 {
 
 	public static void main(String[] args) {
-		int result = MyUtil1.findMax(1, 22);
-		System.out.println(result);
-		double result2 = MyUtil1.findMax(1.1, 2.2);
-		System.out.println(result2);
+		System.out.println(MyUtil1.findMax(1, 3));
+		System.out.println(MyUtil1.findMax(1.3, 3.3));
 		int arr[] = {10,30,15,23,4};
 		System.out.println(MyUtil1.findMax(arr));
 	}
