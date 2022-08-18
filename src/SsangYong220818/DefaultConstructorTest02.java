@@ -4,7 +4,7 @@ class Person1{
 	private String name;
 	private int age;
 	
-	public Person1() {
+	public Person1() { //필요하다면 기본 생성자도 만들어 줘야한다.
 		
 	}
 	
