@@ -9,7 +9,7 @@ class Person{
 	}
 }
 
-public class DifaultConstructorTest {
+public class DefaultConstructorTest {
 
 	public static void main(String[] args) {
 		Person p1 = new Person(); 
