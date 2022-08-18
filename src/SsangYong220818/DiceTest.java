@@ -15,6 +15,8 @@ public class DiceTest {
 	public static void main(String[] args) {
 		Dice dc = new Dice();
 		System.out.println(dc.roll());
+		double a = Math.random();
+		System.out.println((int)(a * 6));
 
 	}
 
