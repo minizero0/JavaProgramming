@@ -27,6 +27,16 @@ class Box1{
 		length = 10;
 		height = 10;
 	}
+//	public Box1(double length) { 동일한 매개변수 개수와 같은 자료형이면 오류 발생. 
+//		this.length = length;
+//		width = 10;
+//		height = 10;
+//	}
+	public Box1(double width, double length) {
+		this.width = width;
+		this.length = length;
+		height = 10;
+	}
 	
 	public void setWidth(double width) {
 		this.width = width;
@@ -57,12 +67,25 @@ class Box1{
 public class BoxTest02 {
 
 	public static void main(String[] args) {
-		Box1 b1 = new Box();
+		Box1 b1 = new Box1();
+		Box1 b2 = new Box1(50,50,50);
+		Box1 b3 = new Box1(50);
+		Box1 b4 = new Box1(50,50);
+		
 		b1.setWidth(10);
 		b1.setHeight(5);
 		b1.setLength(7.2);
 		b1.calcVolum();
-		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f", b1.getWidth(), b1.getLength(), b1.getHeight(), b1.getCalcVolum());
-		System.out.println(b1.getCalcVolum());
+		b2.calcVolum();
+		b3.calcVolum();
+		b4.calcVolum();
+		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f\n", b1.getWidth(), b1.getLength(), b1.getHeight(), b1.getCalcVolum());
+		System.out.println("=================================================");
+		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f\n", b2.getWidth(), b2.getLength(), b2.getHeight(), b2.getCalcVolum());
+		System.out.println("=================================================");
+		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f\n", b3.getWidth(), b3.getLength(), b3.getHeight(), b3.getCalcVolum());
+		System.out.println("=================================================");
+		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f\n", b4.getWidth(), b4.getLength(), b4.getHeight(), b4.getCalcVolum());
+		System.out.println("=================================================");
 	}
 }
