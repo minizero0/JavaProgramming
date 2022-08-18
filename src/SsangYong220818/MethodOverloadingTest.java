@@ -11,12 +11,7 @@ class MyUtil{
 public class MethodOverloadingTest {
 
 	public static void main(String[] args) {
-		MyUtil m1 = new MyUtil();
-		
-		int result = m1.findMax(1,22);
+		int result = MyUtil.findMax(1, 22);
 		System.out.println(result);
-		
-
 	}
-
 }
