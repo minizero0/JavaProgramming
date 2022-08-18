@@ -10,7 +10,7 @@ class Human{
 	}
 	
 	public Human() {
-		this("Hong", 20); 	//다른 생성자 호출시 this()사용. this()는 생성자의 첫번째 문장에만 사용가능. 다른 라인에 사용시 오류 발생.
+		this("Hong", 20); 	//생성자 안에서 다른 생성자 호출시 this()사용. this()는 생성자의 첫번째 문장에만 사용가능. 다른 라인에 사용시 오류 발생.
 	}
 	public String toString() {
 		return "이름:" +name + ",나이:" + age;
