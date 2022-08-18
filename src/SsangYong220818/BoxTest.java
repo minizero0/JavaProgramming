@@ -40,7 +40,7 @@ public class BoxTest {
 		b1.setHeight(5);
 		b1.setLength(7.2);
 		b1.calcVolum();
+		System.out.printf("가로 : %f\n세로 : %f\n높이 : %f\n부피 : %f", b1.getWidth(), b1.getLength(), b1.getHeight(), b1.getCalcVolum());
 		System.out.println(b1.getCalcVolum());
-
 	}
 }
