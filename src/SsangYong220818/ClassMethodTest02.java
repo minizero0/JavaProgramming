@@ -16,6 +16,7 @@ class Human3{
 		cnt += 2; // -> static 멤버변수는 접근가능.
 		count();  // -> static 멤버메소드 접근가능.
 		name = "asd";  //static 메소드에서는 static 멤버에만 접근이 가능하다. 멤버변수를 사용할 수 없다.
+		//실행시 오류발생! Cannot make a static reference to the non-static field name
 	}
 	
 	public static void count() {
