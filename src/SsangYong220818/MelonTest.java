@@ -1,9 +1,18 @@
 package SsangYong220818;
 
 class Food{
-	protected int cal;
+	protected double cal;
 	protected int price;
-	protected int weight;
+	protected double weight;
+	
+	public Food(double cal, int price, double weight) {
+		this.cal = cal;
+		this.price = price;
+		this.weight = weight;
+	}
+	public Food() {
+		
+	}
 	
 }
 
@@ -11,10 +20,12 @@ class Melon extends Food {
 	
 	private String farm;
 	
-	public Melon(int cal, int price, int weight, String farm) {
-		this.cal = cal;
-		this.price = price;
-		this.weight = weight;
+	public Melon(double cal, int price, double weight, String farm) {
+		super(100,10000,150); // 선언하지 않으면 super() 생략되어있음.
+		
+//		this.cal = cal;
+//		this.price = price;
+//		this.weight = weight;
 		this.farm = farm;
 	}
 	
