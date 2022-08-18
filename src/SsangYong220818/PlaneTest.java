@@ -4,7 +4,7 @@ class Plane{
 	private String company;
 	private String model;
 	private int number;
-	public static int planes = 1;
+	public static int planes;
 	
 	public static int getPlanes() {
 		return planes;
@@ -19,6 +19,7 @@ class Plane{
 	}
 	
 	public Plane() {
+		planes++;
 	}
 	
 	public Plane(String company, String model, int number) {
@@ -84,7 +85,7 @@ class Plane{
 public class PlaneTest {
 
 	public static void main(String[] args) {
-		Plane p1 = new Plane("Asiana", "A230", 665);
+		Plane p1 = new Plane("Asiana", "A230", 65);
 		Plane p2 = new Plane("KoreaAir", "A230");
 		Plane p3 = new Plane(365);
 		Plane p4 = new Plane();
@@ -97,7 +98,6 @@ public class PlaneTest {
 		System.out.println(p5);
 		
 		System.out.println("생성된 비행기 : " + Plane.getPlanes());
-
+		System.out.println("생성된 비행기 : " + Plane.planes);
 	}
-
 }
