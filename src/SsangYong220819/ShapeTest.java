@@ -81,7 +81,7 @@ class Circle extends Shape{
 	}
 	public String toString() {
 		return "x : " + x + ", y : " + y + ", radius : " + radius + ", area : " + area;
-}
+	}
 }
 
 class Triangle extends Rect{
@@ -106,7 +106,9 @@ class Triangle extends Rect{
 	public void setHeight(double height) {
 		this.height = height;
 	}	
-	
+	public String toString() {
+		return "x : " + x + ", y : " + y + ", width : " + width + ", height : " + height + ", area : " + area;
+	}
 }
 
 public class ShapeTest {
@@ -114,10 +116,13 @@ public class ShapeTest {
 	public static void main(String[] args) {
 		Circle c1 = new Circle(10, 20, 4);
 		Rect r1 = new Rect(10,20, 3, 5);
+		Triangle t1 = new Triangle(10,20,30,5);
 		c1.operation();
 		r1.operation();
+		t1.operation();
 		System.out.println(c1);
 		System.out.println(r1);
+		System.out.println(t1);
 
 	}
 
