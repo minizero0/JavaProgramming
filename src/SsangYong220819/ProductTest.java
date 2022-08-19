@@ -59,8 +59,6 @@ public class ProductTest {
 		System.out.println(p1.getPrice());
 		System.out.println(p2.getPrice());
 		System.out.println(p1.toString());
-		System.out.println(p2.toString());
-		
+		System.out.println(p2.toString());	
 	}
-
 }
