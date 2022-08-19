@@ -6,6 +6,10 @@ abstract class Shape{
 	protected double area;
 	abstract public void operation();
 	
+	public String toString() {
+		return "x: "+x+", y: "+y+", area : " + area;
+	}
+	
 	public Shape(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -57,7 +61,7 @@ class Rect extends Shape{
 		return height;
 	}
 	public String toString() {
-		return "x : " + x + ", y : " + y + ", width : " + width + ", height : " + height + ", area : " + area;
+		return super.toString() + ", width : " + width + ", height : " + height;
 	}
 }
 
