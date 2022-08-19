@@ -123,7 +123,5 @@ public class ShapeArrTest {
 			if (arr[i] instanceof ThreeDimShape)
 				System.out.println(((ThreeDimShape)arr[i]).getVolume());
 		}
-
 	}
-
 }
