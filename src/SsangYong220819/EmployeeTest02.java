@@ -29,14 +29,14 @@ class Employee1{
 	}
 }
 
-class SalariedEmployee extends Employee1{
+class SalariedEmployee1 extends Employee1{
 	private int level;	//호봉
 	private int base;	//기본급
 	private int sudang;	//수당
 	
-	public SalariedEmployee() {
+	public SalariedEmployee1() {
 	}
-	public SalariedEmployee(String name, String code, int level) {
+	public SalariedEmployee1(String name, String code, int level) {
 		super(name,code);
 		this.level = level;
 	}
@@ -52,12 +52,12 @@ class SalariedEmployee extends Employee1{
 	}
 
 }
-class HourlyEmployee extends Employee1{
+class HourlyEmployee1 extends Employee1{
 	private int hour;
-	public HourlyEmployee() {
+	public HourlyEmployee1() {
 		
 	}
-	public HourlyEmployee(String name, String code, int hour) {
+	public HourlyEmployee1(String name, String code, int hour) {
 		super(name,code);
 		this.hour = hour;
 		
@@ -69,12 +69,12 @@ class HourlyEmployee extends Employee1{
 	}
 }
 
-public class EmployeeTest {
+public class EmployeeTest02 {
 
 	public static void main(String[] args) {
-		SalariedEmployee1 s1 = new SalariedEmployee1("cavin", "n12", 1);
+		SalariedEmployee s1 = new SalariedEmployee("cavin", "n12", 1);
 		s1.computeSalary();
-		HourlyEmployee1 s2 = new HourlyEmployee1("matu", "n15", 5);
+		HourlyEmployee s2 = new HourlyEmployee("matu", "n15", 5);
 		s2.computeSalary();
 
 	}
