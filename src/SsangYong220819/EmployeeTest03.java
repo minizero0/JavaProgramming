@@ -74,7 +74,7 @@ class HourlyEmployee extends Employee{
 	}
 }
 
-public class EmployeeTest05 {
+public class EmployeeTest03 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
