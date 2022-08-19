@@ -114,8 +114,15 @@ public class ShapeArrTest {
 		arr[0] = new Rectangle(5, 2, 10, 5);
 		arr[1] = new Triangle2(5, 2, 10, 5);
 		arr[2] = new Cylinder(5, 20, 5, 30);
-		for (int i = 0; i < arr.length; i++)
+		
+
+		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
+			if (arr[i] instanceof TwoDimShape)
+				System.out.println(((TwoDimShape)arr[i]).getArea());
+			if (arr[i] instanceof ThreeDimShape)
+				System.out.println(((ThreeDimShape)arr[i]).getVolume());
+		}
 
 	}
 
