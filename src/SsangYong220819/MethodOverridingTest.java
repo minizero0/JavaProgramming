@@ -32,6 +32,12 @@ class Plane extends Bird{
 		super(name, color, wing);
 		this.engine = engine;
 	}
+	public void fly() {
+		if(wing == true && engine == true)
+			System.out.println(color + "색" + name + "이륙.");
+		else
+			System.out.println(color + "색" + name + "이륙불가.");
+	}
 }
 
 public class MethodOverridingTest {
