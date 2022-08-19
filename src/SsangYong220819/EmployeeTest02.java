@@ -1,6 +1,6 @@
 package SsangYong220819;
 
-class Employee1{
+abstract class Employee1{
 	protected String name;
 	protected String code;
 	protected int total;
@@ -12,9 +12,7 @@ class Employee1{
 	Employee1(){
 		
 	}
-	protected void computeSalarty() {
-		
-	}
+	abstract public void computeSalarty();
 	public String getName() {
 		return name;
 	}
@@ -29,7 +27,7 @@ class Employee1{
 	}
 }
 
-class SalariedEmployee1 extends Employee1{
+abstract class SalariedEmployee1 extends Employee1{
 	private int level;	//호봉
 	private int base;	//기본급
 	private int sudang;	//수당
@@ -52,7 +50,7 @@ class SalariedEmployee1 extends Employee1{
 	}
 
 }
-class HourlyEmployee1 extends Employee1{
+abstract class HourlyEmployee1 extends Employee1{
 	private int hour;
 	public HourlyEmployee1() {
 		
@@ -72,9 +70,9 @@ class HourlyEmployee1 extends Employee1{
 public class EmployeeTest02 {
 
 	public static void main(String[] args) {
-		SalariedEmployee s1 = new SalariedEmployee("cavin", "n12", 1);
+		SalariedEmployee1 s1 = new SalariedEmployee1("cavin", "n12", 1);
 		s1.computeSalary();
-		HourlyEmployee s2 = new HourlyEmployee("matu", "n15", 5);
+		HourlyEmployee1 s2 = new HourlyEmployee1("matu", "n15", 5);
 		s2.computeSalary();
 
 	}
