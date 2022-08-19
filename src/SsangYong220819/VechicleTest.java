@@ -5,7 +5,7 @@ abstract class Vechicle{
 	public abstract double getKillosPerLiter();
 	
 	public void printSpeed() {
-		System.out.println(speed);
+		System.out.println("현재속도: " + speed);
 	}
 	public Vechicle(int speed) {
 		this.speed = speed;
@@ -17,7 +17,7 @@ class Car extends Vechicle{
 		super(speed);
 	}
 	public double getKillosPerLiter(){
-		return speed;
+		return 200;
 	}
 }
 
@@ -26,9 +26,6 @@ public class VechicleTest {
 	public static void main(String[] args) {
 		Car c = new Car(100);
 		c.printSpeed();
-		System.out.println(c.getKillosPerLiter());
-		
-
+		System.out.println("제한속도: " + c.getKillosPerLiter());
 	}
-
 }

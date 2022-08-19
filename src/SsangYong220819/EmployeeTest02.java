@@ -1,4 +1,4 @@
-package SsangYong220819;
+/*package SsangYong220819;
 
 abstract class Employee1{
 	protected String name;
@@ -78,3 +78,4 @@ public class EmployeeTest02 {
 	}
 
 }
+*/
