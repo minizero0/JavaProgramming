@@ -15,7 +15,5 @@ public class InterFaceTest01 {
 	public static void main(String[] args) {
 		Bd ob = new Bd();
 		ob.pro();
-
 	}
-
 }
