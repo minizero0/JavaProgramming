@@ -32,6 +32,12 @@ class Carr extends Vehicle implements Move{
 	public double getKillosPerLiter() {
 		return 2;
 	}
+	public void turnLeft() {
+		System.out.println("좌회전 합니다.");
+	}
+	public void turnLight() {
+		System.out.println("우회전 합니다.");
+	}
 	public void SpeedUp(int speed) {
 		System.out.println(speed + "만큼 속도 증가.");
 		super.speed += speed;
