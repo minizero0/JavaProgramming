@@ -9,7 +9,11 @@ import javax.swing.JFrame;
 class MyEvent implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("눌러짐");
+		int sum = 0;
+		for (int i = 1; i < 11; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
 	}
 }
 
