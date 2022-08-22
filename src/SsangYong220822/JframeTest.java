@@ -10,7 +10,7 @@ class MyFrame extends JFrame{
 	}
 }
 
-public class JframTest {
+public class JframeTest {
 
 	public static void main(String[] args) {
 		MyFrame f = new MyFrame("창만들기 연습.");
