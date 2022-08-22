@@ -17,7 +17,6 @@ abstract class Vehicle{
 }
 
 interface Move{
-	int speed = 100;
 	public void SpeedUp(int speed);
 	public void SpeedDown(int speed);
 	public void printSpeed();
