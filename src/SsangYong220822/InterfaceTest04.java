@@ -38,6 +38,8 @@ public class InterfaceTest04 {
 		ob.sayHello();
 		ob.pro();
 		ob.hello();
+		ob.k = 200;
+//		ob.YEAR = 2021; 인터페이스 변수는 자동 상수이므로 변경할 수 없다.
 
 	}
 
