@@ -24,8 +24,13 @@ class Triangle implements Shape{
 public class InterfaceTest02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Shape ob1 = new Circle();
+		Shape ob2 = new Rect();
+		Shape ob3 = new Triangle();
+		
+		ob1.draw();
+		ob2.draw();
+		ob3.draw();
 	}
 
 }
