@@ -9,10 +9,12 @@ import javax.swing.*;
 class Msdos extends JFrame{
 	public Msdos() {
 		setTitle("숙제 : 마우스리스너");
-		this.setLayout(new FlowLayout());
+		setLayout(new FlowLayout());
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		JButton b = new JButton("마우스이벤트");
 		MyMouseListener listener = new MyMouseListener();
-		b.setBackground(Color.YELLOW);
+		b.setBackground(new Color(255,128,0));
 		b.addMouseListener(listener);
 		
 		add(b);
@@ -22,28 +24,28 @@ class Msdos extends JFrame{
 	}
 }
 
-class MyMouseListener implements MouseListener{
+class MyMouseListener implements MouseListener{  //MouseLister의 추상 메소드 모두 오버라이딩
     @Override
-	public void mouseClicked(MouseEvent e) {
-    	System.out.println("Click");
+	public void mouseClicked(MouseEvent e) { //마우스 클릭
+    	System.out.println("Click"); 		
     	JButton b = (JButton)e.getSource();
     	b.setBackground(Color.RED);
     }
 
-    public void mousePressed(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {  //마우스 눌러졌을때
     	System.out.println("pressed");
     }
 
-    public void mouseReleased(MouseEvent e) {
+    public void mouseReleased(MouseEvent e) { //눌러진 버튼이 떨어질때
     }
 
-    public void mouseEntered(MouseEvent e) {
+    public void mouseEntered(MouseEvent e) {  //마우스가 컴포넌트 위에 올라갈때
     	System.out.println("Entered");
 //        JButton b = (JButton)e.getSource();
 //        b.setBackground(Color.RED);
     }
 
-    public void mouseExited(MouseEvent e) {
+    public void mouseExited(MouseEvent e) {  //마우스가 컴포넌트에서 내려올때
     	System.out.println("Exited");
 //        JButton b = (JButton)e.getSource();
 //        b.setBackground(Color.YELLOW);
