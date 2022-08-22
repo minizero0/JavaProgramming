@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 class MyFrame1 extends JFrame {
 	public MyFrame1() {
 		super("계산기");
-		JButton btn_sum = new JButton("1~10까지 더하기");
+		JButton btn_sum = new JButton("1에서 10까지 더하기");
 		add(btn_sum);
 		ActionListener me = new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
