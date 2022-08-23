@@ -12,5 +12,4 @@ public class DateTest02 {
 		System.out.println(arr[startDay.getDay()] + "요일");
 		System.out.println(startDay.getDay());
 	}
-
 }
