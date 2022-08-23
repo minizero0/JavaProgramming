@@ -11,9 +11,6 @@ public class DateTest02 {
 		String []arr = {"일", "월", "화", "수", "목", "금", "토"};
 		System.out.println(arr[startDay.getDay()] + "요일");
 		System.out.println(startDay.getDay());
-		
-		
-
 	}
 
 }
