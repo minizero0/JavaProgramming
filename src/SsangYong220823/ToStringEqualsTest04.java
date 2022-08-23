@@ -1,8 +1,8 @@
 package SsangYong220823;
-class Rect2{
+class Rect3{
 	private double width;
 	private double height;
-	public Rect2(double width, double height) {
+	public Rect3(double width, double height) {
 		this.width = width;
 		this.height = height;
 	}
@@ -10,20 +10,20 @@ class Rect2{
 	public String toString() {
 		return width + "+" + height + "=" + width*height;
 	}
+	public boolean equals(Rect3 r) {
+		boolean isFlag = false;
+		if(width == r.width && height == r.height) {
+			isFlag = true;
+		}
+		return isFlag;
+	}
 }
 
-public class ToStringEqualsTest03 {
+public class ToStringEqualsTest04 {
 
 	public static void main(String[] args) {
-		Rect2 r1 = new Rect2(20,40);
-		Rect2 r2 = new Rect2(20,40);
-		System.out.println(r1);
-		System.out.println(r1.toString());
-		System.out.println(r1.equals(r1));
-		if (r1 == r1)
-			System.out.println("true");
-		else 
-			System.out.println("false");
+		Rect3 r1 = new Rect3(20,40);
+		Rect3 r2 = new Rect3(20,40);
 		System.out.println(r1.equals(r2));
 
 	}
