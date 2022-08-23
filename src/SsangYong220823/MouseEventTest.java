@@ -11,11 +11,10 @@ import javax.swing.JFrame;
 class MyFrame extends JFrame {
 	public MyFrame() {
 		setTitle("마우스이벤트");
-		setLayout(new FlowLayout());
-		
+//		setLayout(new FlowLayout());
 		JButton b = new JButton("이벤트");
 		MyMouse ms = new MyMouse();
-		b.setBackground(Color.YELLOW);
+		b.setBackground(Color.RED);
 		b.addMouseListener(ms);
 		add(b);
 		setSize(400,300);
