@@ -24,6 +24,7 @@ public class ToStringEqualsTest03 {
 			System.out.println("true");
 		else 
 			System.out.println("false");
+		
 		System.out.println(r1.equals(r2));
 
 	}

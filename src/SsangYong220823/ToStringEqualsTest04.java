@@ -10,7 +10,9 @@ class Rect3{
 	public String toString() {
 		return width + "+" + height + "=" + width*height;
 	}
-	public boolean equals(Rect3 r) {
+	
+	
+	public boolean equals(Rect3 r) {   //오버라이딩을 통해 메소드를 변형시킨다.
 		boolean isFlag = false;
 		if(width == r.width && height == r.height) {
 			isFlag = true;

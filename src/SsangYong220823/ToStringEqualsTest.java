@@ -14,6 +14,7 @@ public class ToStringEqualsTest {
 		Rect r = new Rect(20,40);
 		System.out.println(r);
 		System.out.println(r.toString());
+		
 
 	}
 }
