@@ -17,8 +17,5 @@ public class SetLottoTest {
 				i--;
 		}
 		System.out.print(set + " ");
-		
-			
 	}
-
 }
