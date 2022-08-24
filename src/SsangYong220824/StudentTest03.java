@@ -7,7 +7,7 @@ public class StudentTest03 {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void menu() {
-		System.out.println("1: 추가, 2:출력, 3:검색, 0:종료");
+		System.out.println("1: 추가, 2:출력, 3:검색, 4:삭제, 0:종료");
 	}
 	
 	public static void insertStudent(ArrayList<Student> list) {
@@ -39,10 +39,22 @@ public class StudentTest03 {
 			}
 		}
 		System.out.println("존재하는 이름이 없습니다.");
-		
 	}
 	
-
+	public static void removeStudent(ArrayList<Student> list) {
+		String sName;
+		System.out.println("삭제하려는 학생의 이름을 입력하세요.");
+		sName = sc.next();
+		for (Student a : list) {
+			if (a.getName().equals(sName)) {
+				list.remove(a);
+				return;
+			}
+		}
+		System.out.println("존재하는 이름이 없습니다.");
+	}
+	
+	
 	public static void main(String[] args) {
 		ArrayList<Student> list = new ArrayList<Student>();
 		int sel;
@@ -56,6 +68,7 @@ public class StudentTest03 {
 				case 1:insertStudent(list);break;
 				case 2:printStudent(list);break;
 				case 3:searchStudent(list);break;
+				case 4:removeStudent(list);break;
 			}
 		}
 	}
