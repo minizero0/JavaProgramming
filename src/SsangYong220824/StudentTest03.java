@@ -48,6 +48,7 @@ public class StudentTest03 {
 		for (Student a : list) {
 			if (a.getName().equals(sName)) {
 				list.remove(a);
+				System.out.println("삭제완료.");
 				return;
 			}
 		}
@@ -72,4 +73,4 @@ public class StudentTest03 {
 			}
 		}
 	}
-}
+}	
