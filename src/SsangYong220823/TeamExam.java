@@ -22,7 +22,6 @@ public class TeamExam {
 			else
 				System.out.println("DOWN");
 		}
-		System.out.println("총 시도 :" + cnt);
+		System.out.println("총 시도 : " + cnt);
 	}
-
 }
