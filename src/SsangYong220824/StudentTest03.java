@@ -7,11 +7,11 @@ public class StudentTest03 {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void menu() {
-		System.out.println("1: 추가, 2:출력, 0:종료");
+		System.out.println("1: 추가, 2:출력, 3:검색, 0:종료");
 	}
 	
 	public static void insertStudent(ArrayList<Student> list) {
-		System.out.println("학생 정보를 입력하세요. [종료:Exit]\n이름:");
+		System.out.println("학생 정보를 입력하세요.\n이름:");
 		String name = sc.next();
 		System.out.println("주소:");
 		String addr = sc.next();
@@ -28,6 +28,20 @@ public class StudentTest03 {
 			System.out.println(a.getName() + "\t" + a.getAddress() + "\t" + a.getNumber() + "\t");
 	}
 	
+	public static void searchStudent(ArrayList<Student> list) {
+		String sName;
+		System.out.println("검색하려는 학생의 이름을 입력하세요.");
+		sName = sc.next();
+		for (Student a : list) {
+			if (a.getName().equals(sName)) {
+				System.out.println(a);
+				return;
+			}
+		}
+		System.out.println("존재하는 이름이 없습니다.");
+		
+	}
+	
 
 	public static void main(String[] args) {
 		ArrayList<Student> list = new ArrayList<Student>();
@@ -41,6 +55,7 @@ public class StudentTest03 {
 			switch(sel) {
 				case 1:insertStudent(list);break;
 				case 2:printStudent(list);break;
+				case 3:searchStudent(list);break;
 			}
 		}
 	}
