@@ -18,6 +18,5 @@ public class ArrayListTest07 {
 			if (data instanceof Person2)
 				((Person2)data).sayHello();
 		}
-		
 	}
 }
