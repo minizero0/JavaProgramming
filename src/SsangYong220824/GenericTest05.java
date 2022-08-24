@@ -14,10 +14,10 @@ public class GenericTest05 {
 		//for-each반복문 활용하여 sayhello도 호출
 		for (Person1 a : list) {
 			System.out.println(a);
-			if (a instanceof Person1)
-				a.sayHello();
+//			a.sayHello();				<Person1> Generic 설정했기 때문에 이런식으로 작성해도 상관없음
+			if (a instanceof Person1) 	//만약 타입이 다를 수도 있을 때는 instanceof로 타입 확인
+				((Person1)a).sayHello();
 		}
-		
 		
 	}
 }
