@@ -31,7 +31,6 @@ public class StudentTest03 {
 
 	public static void main(String[] args) {
 		ArrayList<Student> list = new ArrayList<Student>();
-		String name,addr,number;
 		int sel;
 		
 		while(true){
@@ -43,11 +42,6 @@ public class StudentTest03 {
 				case 1:insertStudent(list);break;
 				case 2:printStudent(list);break;
 			}
-		
 		}
-		
-
-
 	}
-
 }
