@@ -15,7 +15,8 @@ public class TreeSetTest {
 		System.out.println(set.add("수박"));
 		System.out.println(set.add("복숭아"));
 		System.out.println(set);
-
+		
+		System.out.println(set.size());
 	}
 
 }
