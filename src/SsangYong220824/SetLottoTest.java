@@ -1,6 +1,6 @@
 package SsangYong220824;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 import java.util.Random;
 
 //Set을 이용해 Lotto 생성기 만들기 
@@ -8,15 +8,17 @@ import java.util.Random;
 public class SetLottoTest {
 
 	public static void main(String[] args) {
-		LinkedHashSet set = new LinkedHashSet();
+		TreeSet set = new TreeSet();
 		Random r = new Random();
 		
 		for (int i = 0; i < 6; i++) {
-			set.add(r.nextInt(45)+1);
+			boolean n = set.add(r.nextInt(45)+1);
+			if (!n)
+				i--;
 		}
 		System.out.print(set + " ");
 		
-
+			
 	}
 
 }
