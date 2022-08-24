@@ -5,6 +5,24 @@ import java.util.ArrayList;
 class Student{
 	private String name;
 	private String address;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
 	private String number;
 	
 	public Student(String name, String address, String number) {
