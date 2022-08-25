@@ -3,7 +3,7 @@ package SsangYong220825;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
 
-public class MapTest02 {
+public class DictionanryTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -35,9 +35,15 @@ public class MapTest02 {
 				case 3:
 					System.out.println("삭제할 단어를 입력하세요");
 					s1 = sc.next();
-					System.out.println(map1.remove(s1));
+//					s2 = map1.remove(s1);
+					if (map1.remove(s1) != null)
+						System.out.println("삭제되었습니다.");
+					else
+						System.out.println("없는단어입니다.");
+					break;
 				case 4:
 					System.out.println(map1);
+					break;
 				case 0: break;
 			}
 			if (n == 0)
