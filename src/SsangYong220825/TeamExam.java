@@ -8,11 +8,14 @@ public class TeamExam {
 	public static void getAge(int n) {
 		System.out.println("age : " + (122 - n));
 	}
+	public static void millGetAge(int n) {
+		System.out.println("age : " + (22 - n));
+	}
 	
-	public static void getSex(char ch) {
-		if(ch == '1' || ch == '3' || ch == '5' || ch == '7')
+	public static void getSex(int ch) {
+		if(ch % 2 == 1)
 			System.out.println("sex : male");
-		else if(ch == '2' || ch == '4' || ch == '6'|| ch == '8')
+		else if(ch % 2 == 0)
 			System.out.println("set : female");
 		else
 			System.out.println("input error");
@@ -29,10 +32,13 @@ public class TeamExam {
 			return;
 		}
 		String s1 = num.substring(num.indexOf("-"), 8);
-		System.out.println((num.indexOf("-"))+1);
 		String s2 = num.substring(0, 2); 
+		if((s1.charAt(1)) == '3' || (int)(s1.charAt(1)) == '4')
+			millGetAge(Integer.parseInt(s2));
+		else	
+			getAge(Integer.parseInt(s2));
 		
-		getSex(s1.charAt(1));
-		getAge(Integer.parseInt(s2));
+		getSex((int)s1.charAt(1));
+		
 	}
 }
