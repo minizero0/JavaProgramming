@@ -1,6 +1,8 @@
 package SsangYong220825;
-//주민번 3,4,5,6,7,8 을 적하여 성별과 나이 판별 출력 .
+
 import java.util.Scanner;
+
+//주민번호를 통해 성별과 나이 판별 출력 .
 public class TeamExam {
 	
 	public static void getAge(int n) {
@@ -27,6 +29,7 @@ public class TeamExam {
 			return;
 		}
 		String s1 = num.substring(num.indexOf("-"), 8);
+		System.out.println((num.indexOf("-"))+1);
 		String s2 = num.substring(0, 2); 
 		
 		getSex(s1.charAt(1));
