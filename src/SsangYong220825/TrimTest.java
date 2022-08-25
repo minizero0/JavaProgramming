@@ -9,7 +9,6 @@ public class TrimTest {
 		System.out.println(data.length());
 		System.out.println(data.trim());		//공백을 제거한 새로운 문자열 반환.
 		System.out.println(data.trim().length());		
-		
 	}
 
 }
