@@ -19,7 +19,7 @@ class BankAccount{
 	}
 	public void withdraw(int money) throws NegativeBalanceException{
 		if (money > balance)
-			throw new NegativeBalanceException("출금 금액이 잔고 " + balance + " 보다 많습니다.");
+			throw new NegativeBalanceException("출금 금액: " + money + " 잔고: " + balance + " 보다 많습니다.");
 		balance -= money;
 		System.out.println("출금 후 잔액 : " + balance);
 		
