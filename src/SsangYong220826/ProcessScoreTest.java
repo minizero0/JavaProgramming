@@ -16,7 +16,7 @@ class ProcessScore{
 			else
 				throw new IllegalScore(n + "은 음수입니다.");
 		}
-		avg = sum/arr.length;
+		avg = (double)sum/arr.length;
 		System.out.println("평균 : " + avg);
 	}
 }
@@ -25,13 +25,10 @@ public class ProcessScoreTest {
 
 	public static void main(String[] args) throws IllegalScore{
 		try {
-			int arr[] = {-1,4,3,10,6};
+			int arr[] = {5,4,11,10,6};
 			ProcessScore ps = new ProcessScore(arr);
 		}catch(IllegalScore e) {
 			System.out.println(e.getMessage());
 		}
-		
-
 	}
-
 }
