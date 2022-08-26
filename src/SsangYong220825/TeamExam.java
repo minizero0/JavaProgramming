@@ -33,12 +33,12 @@ public class TeamExam {
 		}
 		String s1 = num.substring(num.indexOf("-"), 8);
 		String s2 = num.substring(0, 2); 
-		if((s1.charAt(1)) == '3' || (int)(s1.charAt(1)) == '4')
+		if((s1.charAt(1)) == '3' || (s1.charAt(1)) == '4')
 			millGetAge(Integer.parseInt(s2));
 		else	
 			getAge(Integer.parseInt(s2));
-		
 		getSex((int)s1.charAt(1));
+		
 		
 	}
 }
