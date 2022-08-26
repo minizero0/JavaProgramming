@@ -15,12 +15,11 @@ public class ValidCode {
 			if (code.charAt(i) != '-')
 				sum += (code.charAt(i) - '0') * n++;
 		}
-		System.out.println(code.charAt(code.length()-1));
 		int last = 11 - sum%11;
-		System.out.println(last);
 		if (last != code.charAt(code.length()-1) -'0')
 			System.out.println("잘못된 주민번호");
+		else
+			System.out.println("");
 		
 	}
-
 }
