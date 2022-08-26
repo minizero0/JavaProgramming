@@ -27,8 +27,10 @@ public class CancerTest02 {
 		Calendar cal = Calendar.getInstance();
 		System.out.println(cal.get(cal.YEAR));
 		String code;
+		
 		System.out.println("주민번호 입력. ex) 96xxxx-1xxxxxx");
 		code = sc.next();
+		
 		if (valid(code))
 			System.out.println("올바른 주민번호입니다.");
 		else {
@@ -38,12 +40,14 @@ public class CancerTest02 {
 		
 		int gender = code.charAt(7)-'0';
 		int year = Integer.parseInt(code.substring(0, 2));
+		
 		switch(gender) {
 			case 1:System.out.println("male");year += 1900;break;
 			case 2:System.out.println("femal");year += 1900;break;
 			case 3:System.out.println("male");year += 2000;break;
 			case 4:System.out.println("female");year += 2000;break;
 		}
+			
 		System.out.println("출생년도 : " + year);
 		int age = cal.get(cal.YEAR) - year;
 		System.out.println("나이 : " + age);
