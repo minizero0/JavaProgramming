@@ -26,7 +26,9 @@ public class ProcessScoreTest {
 	public static void main(String[] args) throws IllegalScore{
 		try {
 			int arr[] = {5,4,11,10,6};
+			int arr2[] = {2,3,4,-1,4};
 			ProcessScore ps = new ProcessScore(arr);
+			ProcessScore ps2 = new ProcessScore(arr2);
 		}catch(IllegalScore e) {
 			System.out.println(e.getMessage());
 		}
