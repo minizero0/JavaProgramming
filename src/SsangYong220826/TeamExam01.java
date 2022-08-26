@@ -20,7 +20,6 @@ class MyDate{
 		month = st.nextToken();
 		day = st.nextToken();
 		System.out.println(year + "년 " + month + "월 " + day + "일");
-		
 	}
 }
 
