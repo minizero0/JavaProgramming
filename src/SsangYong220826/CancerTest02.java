@@ -4,7 +4,23 @@ import java.time.Year;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class CancerTest {
+public class CancerTest02 {
+	
+	public static boolean valid(String code) {
+		int n = 2, sum = 0;
+		boolean isFlag = false;
+		for (int i = 0; i < code.length()-1; i++) {
+			if (n==10)
+				n = 2;
+			if (code.charAt(i) != '-')
+				sum += (code.charAt(i) -'0') * n++;
+		}
+		int check = 11 - sum%11;
+		if (check == code.charAt(code.length()-1)-'0')
+			isFlag = true;
+		return isFlag;
+		
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -13,6 +29,12 @@ public class CancerTest {
 		String code;
 		System.out.println("주민번호 입력. ex) 96xxxx-1xxxxxx");
 		code = sc.next();
+		if (valid(code))
+			System.out.println("올바른 주민번호입니다.");
+		else {
+			System.out.println("잘못된 주민번호입니다. 다시 입력하세요.");
+			return;
+		}
 		
 		int gender = code.charAt(7)-'0';
 		int year = Integer.parseInt(code.substring(0, 2));
