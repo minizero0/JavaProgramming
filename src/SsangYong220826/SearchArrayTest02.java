@@ -23,7 +23,7 @@ class SearchArray1 {
 
 public class SearchArrayTest02 {
 	
-	public static void main(String[] args) throws NotFoundException1{
+	public static void main(String[] args) {
 		try {
 		double data[] = {26.7, 35.8, 6.9, 7.2};
 		SearchArray sa = new SearchArray(data, 5.8);

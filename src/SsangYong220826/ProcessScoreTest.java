@@ -23,7 +23,7 @@ class ProcessScore{
 
 public class ProcessScoreTest {
 
-	public static void main(String[] args) throws IllegalScore{
+	public static void main(String[] args) {
 		try {
 			int arr[] = {5,4,11,10,6};
 			int arr2[] = {2,3,4,-1,4};

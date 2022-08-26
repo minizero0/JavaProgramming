@@ -23,15 +23,15 @@ class SearchArray {
 
 public class SearchArrayTest {
 	
-	public static void main(String[] args) throws NotFoundException{
-//		try {
-//		double data[] = {26.7, 35.8, 6.9, 7.2};
-//		SearchArray sa = new SearchArray(data, 5.8);
-//		}catch(NotFoundException e) {
-//			System.out.println(e.getMessage());
-//		}
+	public static void main(String[] args) {
+		try {
 		double data[] = {26.7, 35.8, 6.9, 7.2};
 		SearchArray sa = new SearchArray(data, 5.8);
+		}catch(NotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+//		double data[] = {26.7, 35.8, 6.9, 7.2};
+//		SearchArray sa = new SearchArray(data, 5.8);
 	}
 
 }
