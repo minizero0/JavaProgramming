@@ -5,13 +5,10 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Homework01_2 {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		String str = sc.nextLine();
+class MakePrint{
+	public MakePrint(String str) {
 		StringTokenizer st = new StringTokenizer(str);
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		
 		while (st.hasMoreTokens()) {
 			String key = st.nextToken();
@@ -27,6 +24,16 @@ public class Homework01_2 {
 			Integer value = map.get(key);
 			System.out.print(key + " ==> " + value + "\n");
 		}
+	}
+}
+
+public class Homework01_2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		MakePrint mp = new MakePrint(str);
+		
 	}
 
 }
