@@ -21,7 +21,7 @@ class MyDate{
 		day = st.nextToken();
 		System.out.println(year + "년 " + month + "월 " + day + "일");
 	}
-}
+}	
 
 public class TeamExam01 {
 
