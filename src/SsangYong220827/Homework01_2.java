@@ -33,7 +33,5 @@ public class Homework01_2 {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
 		MakePrint mp = new MakePrint(str);
-		
 	}
-
 }

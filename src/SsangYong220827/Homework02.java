@@ -24,7 +24,10 @@ public class Homework02 {
 		Iterator<Super> iter = ar.iterator();
 		
 		while(iter.hasNext()) {
-			
+			Super sp = iter.next();
+			System.out.println(sp.name);
+			System.out.println(sp.age);
+			System.out.println("----------------");
 		}
 
 	}
